@@ -277,24 +277,7 @@ export default function AboutPage() {
                                 {/* Decorative background glow frame */}
                                 <div className="absolute -inset-1.5 rounded-3xl bg-gradient-to-r from-green-500 to-emerald-400 opacity-30 blur-lg transition duration-500 group-hover:opacity-100" />
 
-                                <div className="relative overflow-hidden rounded-3xl border-4 border-white/20 bg-gray-800 shadow-2xl">
-                                    <div className="relative aspect-[4/5] w-full">
-                                        <Image
-                                            src="/images/satyam.png"
-                                            alt="Satyam - Founder"
-                                            fill
-                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                            className="object-cover object-top transition duration-500 hover:scale-105"
-                                            priority
-                                        />
-                                    </div>
 
-                                    {/* Floating Overlay Label */}
-                                    <div className="absolute bottom-4 left-4 right-4 rounded-2xl border border-white/20 bg-gray-900/80 p-4 text-center backdrop-blur shadow-lg">
-                                        <p className="text-lg font-bold text-white">Satyam</p>
-                                        <p className="text-xs font-semibold text-green-400">5+ Years Working Experience</p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

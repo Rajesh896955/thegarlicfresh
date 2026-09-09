@@ -171,10 +171,10 @@ export default async function ProductDetailPage({ params }: PageProps) {
             {/* Actions */}
             <div className="mt-8 border-t border-gray-100 pt-6 flex flex-col sm:flex-row gap-4">
               <Link
-                href="/cart"
+                href=""
                 className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl bg-green-600 px-6 py-4 font-bold text-white shadow-lg shadow-green-600/20 transition hover:bg-green-700"
               >
-                <ShoppingCart className="h-5 w-5" /> Add to Cart & Buy
+                <ShoppingCart className="h-5 w-5" /> Cooming Soon
               </Link>
               <Link
                 href="/contact"

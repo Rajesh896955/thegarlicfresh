@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { products } from "@/app/data/products";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://thegarlicfresh.com";
+  const baseUrl = "https://thegarlicfresh.in";
 
   // Static routes
   const staticRoutes = [
