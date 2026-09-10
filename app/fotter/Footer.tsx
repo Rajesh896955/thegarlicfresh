@@ -103,9 +103,11 @@ export default function Footer() {
                             </a>
 
                             <a
-                                href="#"
+                                href="https://www.instagram.com/thegarlicfresh?stkn=ajJ3NXdjOWQyNWNv"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 aria-label="Instagram"
-                                className="flex h-9 w-9 items-center justify-center rounded-full bg-gray-800 transition hover:bg-green-600 hover:text-white"
+                                className="flex h-9 w-9 items-center justify-center rounded-full bg-gray-800 transition hover:bg-gradient-to-tr hover:from-amber-500 hover:via-pink-500 hover:to-purple-600 hover:text-white"
                             >
                                 <InstagramIcon size={18} />
                             </a>
