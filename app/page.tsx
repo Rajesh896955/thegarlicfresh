@@ -216,21 +216,10 @@ export default function Home() {
                       {product.name}
                     </h3>
 
-                    {/* Discount Badge Below Product Name */}
-                    <div className="mt-1.5 flex items-center">
-                      <span className="inline-block rounded-md bg-orange-500 px-2 py-0.5 text-xs font-bold text-white shadow-sm">
-                        {product.discount}
-                      </span>
-                    </div>
-
-                    {/* Price */}
-                    <div className="mt-2 flex items-center gap-3">
-                      <span className="text-base text-gray-400 line-through">
-                        ₹{product.oldPrice.toLocaleString("en-IN")}
-                      </span>
-
-                      <span className="text-2xl font-bold text-gray-900">
-                        ₹{product.price.toLocaleString("en-IN")}
+                    {/* Coming Soon */}
+                    <div className="mt-3 flex items-center gap-2">
+                      <span className="inline-flex items-center rounded-lg bg-emerald-50 px-3 py-1 text-sm font-bold text-emerald-700 border border-emerald-200">
+                        Coming Soon
                       </span>
                     </div>
 

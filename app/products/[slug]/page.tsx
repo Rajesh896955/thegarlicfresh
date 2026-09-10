@@ -135,16 +135,13 @@ export default async function ProductDetailPage({ params }: PageProps) {
                 </div>
               </div>
 
-              {/* Pricing */}
-              <div className="mt-6 flex items-baseline gap-4">
-                <span className="text-3xl font-extrabold text-green-700 sm:text-4xl">
-                  ₹{product.price.toLocaleString("en-IN")}
+              {/* Coming Soon status */}
+              <div className="mt-6 flex items-center gap-3">
+                <span className="inline-flex items-center rounded-xl bg-emerald-50 border border-emerald-200 px-4 py-2 text-2xl font-bold text-emerald-700">
+                  Coming Soon
                 </span>
-                <span className="text-xl text-gray-400 line-through">
-                  ₹{product.oldPrice.toLocaleString("en-IN")}
-                </span>
-                <span className="text-sm font-bold text-orange-600">
-                  Save ₹{(product.oldPrice - product.price).toLocaleString("en-IN")}
+                <span className="text-sm font-medium text-gray-500">
+                  (Online orders opening soon)
                 </span>
               </div>
 
@@ -170,15 +167,16 @@ export default async function ProductDetailPage({ params }: PageProps) {
 
             {/* Actions */}
             <div className="mt-8 border-t border-gray-100 pt-6 flex flex-col sm:flex-row gap-4">
-              <Link
-                href=""
-                className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl bg-green-600 px-6 py-4 font-bold text-white shadow-lg shadow-green-600/20 transition hover:bg-green-700"
+              <button
+                type="button"
+                disabled
+                className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl bg-gray-100 border border-gray-200 px-6 py-4 font-bold text-gray-500 cursor-not-allowed"
               >
-                <ShoppingCart className="h-5 w-5" /> Cooming Soon
-              </Link>
+                <ShoppingCart className="h-5 w-5" /> Coming Soon
+              </button>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-xl border border-gray-300 bg-white px-6 py-4 font-bold text-gray-700 transition hover:border-green-600 hover:text-green-600"
+                className="inline-flex items-center justify-center rounded-xl bg-green-600 px-6 py-4 font-bold text-white shadow-lg shadow-green-600/20 transition hover:bg-green-700"
               >
                 Bulk Inquiry
               </Link>
