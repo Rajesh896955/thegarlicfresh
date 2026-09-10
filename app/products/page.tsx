@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Star, MessageCircle } from "lucide-react";
+import { Star } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa6";
 import { products } from "../data/products";
 
 export const metadata: Metadata = {
@@ -152,12 +153,14 @@ export default function ProductsPage() {
                 </Link>
 
                 <a
-                  href={`https://wa.me/919354309538?text=${encodeURIComponent(`Hello TheGarlicFresh, I want to order ${product.name} (${product.packSize || "Peeled Garlic"}). Please share details!`)}`}
+                  href={`https://wa.me/919354309538?text=${encodeURIComponent(
+                    `Hello TheGarlicFresh, I want to order ${product.name} (${product.packSize || "Peeled Garlic"}). Please share details!`
+                  )}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full rounded-xl bg-white border border-green-600 py-2.5 text-center text-sm font-bold text-green-600 shadow-sm transition hover:bg-green-50 flex items-center justify-center gap-2"
                 >
-                  <MessageCircle className="h-4 w-4 fill-green-600 text-green-600" />
+                  <FaWhatsapp className="h-5 w-5 text-green-600" />
                   Order on WhatsApp
                 </a>
               </div>

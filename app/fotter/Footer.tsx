@@ -110,13 +110,7 @@ export default function Footer() {
                                 <InstagramIcon size={18} />
                             </a>
 
-                            <a
-                                href="#"
-                                aria-label="Twitter"
-                                className="flex h-9 w-9 items-center justify-center rounded-full bg-gray-800 transition hover:bg-green-600 hover:text-white"
-                            >
-                                <TwitterIcon size={18} />
-                            </a>
+
                         </div>
                     </div>
 
@@ -244,7 +238,7 @@ export default function Footer() {
                                     href="tel:+919354309538"
                                     className="transition hover:text-green-400"
                                 >
-                                    +91 9354309538 
+                                    +91 9354309538
                                 </a>
                             </div>
 
@@ -256,7 +250,7 @@ export default function Footer() {
                                 />
 
                                 <p className="leading-6 text-gray-400">
-                                 MIDC Bhosari
+                                    MIDC Bhosari
                                     <br />
                                     Pune , 411026, Maharashtra, India
                                 </p>
