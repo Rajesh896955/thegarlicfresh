@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Star, ShieldCheck, Truck, Sparkles, ArrowLeft, CheckCircle2, ShoppingCart, Heart } from "lucide-react";
 import { products } from "@/app/data/products";
+import ShareButtons from "./ShareButtons";
 
 interface PageProps {
   params: Promise<{
@@ -181,6 +182,9 @@ export default async function ProductDetailPage({ params }: PageProps) {
                 Bulk Inquiry
               </Link>
             </div>
+
+            {/* Social Share Section */}
+            <ShareButtons productName={product.name} slug={product.slug} />
 
           </div>
 
