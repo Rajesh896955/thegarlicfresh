@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Star } from "lucide-react";
+import { Star, MessageCircle } from "lucide-react";
 import { products } from "../data/products";
 
 export const metadata: Metadata = {
-  title: "Fresh Peeled Garlic Products | All India Delivery - TheGarlicFresh",
+  title: "Fresh Peeled Garlic Products | TheGarlicFresh",
   description: "Browse 100% natural, clean, peeled garlic cloves in 250g, 500g, 1kg & bulk packs. Farm fresh garlic with express All India delivery.",
   keywords: [
     "Peeled Garlic Products",
@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     "Fresh Garlic Online",
   ],
   alternates: {
-    canonical: "https://thegarlicfresh.com/products",
+    canonical: "https://thegarlicfresh.in/products",
   },
   openGraph: {
     title: "Fresh Peeled Garlic Products | TheGarlicFresh",
     description: "Browse 100% natural, clean, peeled garlic cloves in various pack sizes. Order online for doorstep delivery across India.",
-    url: "https://thegarlicfresh.com/products",
+    url: "https://thegarlicfresh.in/products",
     siteName: "TheGarlicFresh",
     images: [
       {
@@ -75,13 +75,11 @@ export default function ProductsPage() {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
 
           {products.map((product) => (
-            <Link
+            <div
               key={product.id}
-              href={`/products/${product.slug}`}
               className="group overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-100 transition duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-between"
             >
-
-              <div>
+              <Link href={`/products/${product.slug}`} className="block">
                 {/* Product Image */}
                 <div className="relative h-72 w-full aspect-[4/3] overflow-hidden bg-gray-50 sm:h-80">
                   <Image
@@ -91,7 +89,6 @@ export default function ProductsPage() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="object-contain p-2 object-center transition duration-500 group-hover:scale-105"
                   />
-
                 </div>
 
                 {/* Product Details */}
@@ -124,7 +121,6 @@ export default function ProductsPage() {
 
                   {/* Rating */}
                   <div className="mt-4 flex items-center gap-2">
-
                     <div className="flex items-center gap-1">
                       {[1, 2, 3, 4, 5].map((star) => (
                         <Star
@@ -144,15 +140,28 @@ export default function ProductsPage() {
                     </span>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              {/* Action Button */}
-              <div className="px-5 pb-5 pt-2">
-                <div className="w-full rounded-xl bg-green-600 py-3 text-center text-sm font-bold text-white shadow-md transition group-hover:bg-green-500">
+              {/* Action Buttons */}
+              <div className="px-5 pb-5 pt-2 flex flex-col gap-2.5">
+                <Link
+                  href={`/products/${product.slug}`}
+                  className="w-full rounded-xl bg-green-600 py-2.5 text-center text-sm font-bold text-white shadow-md transition hover:bg-green-700 flex items-center justify-center"
+                >
                   View product
-                </div>
+                </Link>
+
+                <a
+                  href={`https://wa.me/919354309538?text=${encodeURIComponent(`Hello TheGarlicFresh, I want to order ${product.name} (${product.packSize || "Peeled Garlic"}). Please share details!`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full rounded-xl bg-white border border-green-600 py-2.5 text-center text-sm font-bold text-green-600 shadow-sm transition hover:bg-green-50 flex items-center justify-center gap-2"
+                >
+                  <MessageCircle className="h-4 w-4 fill-green-600 text-green-600" />
+                  Order on WhatsApp
+                </a>
               </div>
-            </Link>
+            </div>
           ))}
 
         </div>
