@@ -20,22 +20,26 @@ function FacebookIcon({ size = 18, className = "" }: { size?: number; className?
     );
 }
 
-function InstagramIcon({ size = 18, className = "" }: { size?: number; className?: string }) {
+function InstagramIcon({ size = 20, className = "" }: { size?: number; className?: string }) {
     return (
         <svg
             width={size}
             height={size}
             viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
             className={className}
         >
-            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+            <radialGradient id="ig-radial" cx="30%" cy="107%" r="150%">
+                <stop offset="0%" stopColor="#ffd600" />
+                <stop offset="10%" stopColor="#ff7a00" />
+                <stop offset="50%" stopColor="#ff0169" />
+                <stop offset="75%" stopColor="#d300c5" />
+                <stop offset="100%" stopColor="#7638fa" />
+            </radialGradient>
+            <rect width="24" height="24" rx="6" fill="url(#ig-radial)" />
+            <path
+                d="M12 7a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8.2A3.2 3.2 0 1 1 15.2 12 3.2 3.2 0 0 1 12 15.2zm5.23-8.35a1.17 1.17 0 1 1-1.17-1.17 1.17 1.17 0 0 1 1.17 1.17zm2.7 1.18a3.5 3.5 0 0 0-.95-2.48 3.5 3.5 0 0 0-2.48-.95c-1-.06-3.95-.06-4.95 0a3.5 3.5 0 0 0-2.48.95 3.5 3.5 0 0 0-.95 2.48c-.06 1-.06 3.95 0 4.95a3.5 3.5 0 0 0 .95 2.48 3.5 3.5 0 0 0 2.48.95c1 .06 3.95.06 4.95 0a3.5 3.5 0 0 0 2.48-.95 3.5 3.5 0 0 0 .95-2.48c.06-1 .06-3.95 0-4.95zm-1.8 6.47a2.1 2.1 0 0 1-1.18 1.18c-.78.31-2.63.24-3.95.24s-3.17.07-3.95-.24a2.1 2.1 0 0 1-1.18-1.18c-.31-.78-.24-2.63-.24-3.95s-.07-3.17.24-3.95a2.1 2.1 0 0 1 1.18-1.18c.78-.31 2.63-.24 3.95-.24s3.17-.07 3.95.24a2.1 2.1 0 0 1 1.18 1.18c.31.78.24 2.63.24 3.95s.07 3.17-.24 3.95z"
+                fill="#ffffff"
+            />
         </svg>
     );
 }
@@ -107,9 +111,9 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Instagram"
-                                className="flex h-9 w-9 items-center justify-center rounded-full bg-gray-800 transition hover:bg-gradient-to-tr hover:from-amber-500 hover:via-pink-500 hover:to-purple-600 hover:text-white"
+                                className="flex h-9 w-9 items-center justify-center rounded-xl overflow-hidden transition duration-300 hover:scale-110 shadow-sm hover:shadow-md hover:shadow-pink-500/20"
                             >
-                                <InstagramIcon size={18} />
+                                <InstagramIcon size={36} />
                             </a>
 
 
