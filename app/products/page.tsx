@@ -91,10 +91,7 @@ export default function ProductsPage() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="object-contain p-2 object-center transition duration-500 group-hover:scale-105"
                   />
-                  {/* Delivery Area Tag */}
-                  <div className="absolute top-3 left-3 rounded-full bg-green-600/90 px-3 py-1 text-[11px] font-bold text-white shadow-md backdrop-blur">
-                    {product.deliveryArea || "All India Delivery"}
-                  </div>
+
                 </div>
 
                 {/* Product Details */}
