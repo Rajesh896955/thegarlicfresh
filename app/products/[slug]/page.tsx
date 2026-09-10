@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: product.seoTitle || `${product.name} | All India Delivery - TheGarlicFresh`,
+    title: product.seoTitle || `${product.name} |  - TheGarlicFresh`,
     description: product.seoDescription || `Order ${product.name} online with All India doorstep delivery. Clean, fresh, ready to cook peeled garlic.`,
     keywords: product.keywords || [product.name, "peeled garlic online", "all india garlic delivery"],
     openGraph: {
@@ -89,16 +89,11 @@ export default async function ProductDetailPage({ params }: PageProps) {
               <div className="absolute top-4 left-4 rounded-full bg-orange-500 px-3.5 py-1 text-xs font-extrabold text-white shadow-md">
                 {product.discount}
               </div>
-              <div className="absolute top-4 right-4 rounded-full bg-green-600 px-3 py-1 text-xs font-bold text-white shadow-md">
-                {product.deliveryArea || "All India Delivery"}
-              </div>
+
             </div>
 
             <div className="mt-6 grid grid-cols-3 gap-3 text-center">
-              <div className="rounded-xl border border-green-100 bg-white p-3 shadow-xs">
-                <Truck className="mx-auto h-5 w-5 text-green-600 mb-1" />
-                <p className="text-[11px] font-bold text-gray-700">All India Delivery</p>
-              </div>
+
               <div className="rounded-xl border border-green-100 bg-white p-3 shadow-xs">
                 <ShieldCheck className="mx-auto h-5 w-5 text-green-600 mb-1" />
                 <p className="text-[11px] font-bold text-gray-700">100% Hygienic</p>
