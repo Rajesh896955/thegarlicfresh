@@ -198,23 +198,27 @@ export default function Home() {
                 className="group overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-100 transition duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col"
               >
                 {/* Product Image */}
-                <div className="relative h-64 w-full aspect-[4/3] overflow-hidden bg-gray-50 sm:h-72">
-                  <Image
-                    src={product.image}
-                    alt={product.name}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                    className="object-cover object-center transition duration-500 group-hover:scale-105"
-                  />
-                </div>
+                <Link href={`/products/${product.slug}`} className="block">
+                  <div className="relative h-64 w-full overflow-hidden bg-gray-50 p-3 sm:h-72 flex items-center justify-center">
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      className="object-contain p-2 object-center transition duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                </Link>
 
                 {/* Product Details */}
                 <div className="p-5 flex flex-1 flex-col justify-between">
                   <div>
                     {/* Product Name */}
-                    <h3 className="text-lg font-bold leading-snug text-gray-800">
-                      {product.name}
-                    </h3>
+                    <Link href={`/products/${product.slug}`} className="block">
+                      <h3 className="text-lg font-bold leading-snug text-gray-800 transition group-hover:text-green-600">
+                        {product.name}
+                      </h3>
+                    </Link>
 
                     {/* Coming Soon */}
                     <div className="mt-3 flex items-center gap-2">
@@ -252,8 +256,8 @@ export default function Home() {
 
                   {/* Button */}
                   <Link
-                    href={`/products`}
-                    className="mt-5 flex h-11 w-full items-center justify-center rounded-xl bg-green-600 text-sm font-bold text-white transition hover:bg-green-700"
+                    href={`/products/${product.slug}`}
+                    className="mt-5 flex h-11 w-full items-center justify-center rounded-xl bg-green-600 text-sm font-bold text-white transition hover:bg-green-700 shadow-sm"
                   >
                     View Product
                   </Link>
