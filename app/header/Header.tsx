@@ -44,6 +44,7 @@ export default function Header() {
               src="/images/logo.png"
               alt="TheGarlicFresh Logo"
               fill
+              sizes="64px"
               priority
               className="object-contain"
             />
@@ -66,11 +67,10 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`relative py-1 text-lg transition duration-200 ${
-                  isActive
-                    ? "font-extrabold text-green-600 after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:rounded-full after:bg-green-600"
-                    : "font-bold text-gray-700 hover:text-green-600"
-                }`}
+                className={`relative py-1 text-lg transition duration-200 ${isActive
+                  ? "font-extrabold text-green-600 after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:rounded-full after:bg-green-600"
+                  : "font-bold text-gray-700 hover:text-green-600"
+                  }`}
               >
                 {item.name}
               </Link>
@@ -80,19 +80,6 @@ export default function Header() {
 
         {/* Right Side */}
         <div className="flex items-center gap-4">
-
-          {/* Cart */}
-          <Link
-            href="/cart"
-            className={`relative flex h-12 w-12 items-center justify-center rounded-full transition shadow-sm ${
-              pathname === "/cart"
-                ? "bg-green-600 text-white shadow-green-600/30"
-                : "bg-green-50 text-green-700 hover:bg-green-100 hover:scale-105"
-            }`}
-            aria-label="Shopping Cart"
-          >
-            <ShoppingCart size={22} />
-          </Link>
 
           {/* Mobile Menu Button */}
           <button
@@ -117,11 +104,10 @@ export default function Header() {
                   key={item.name}
                   href={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`rounded-xl px-5 py-3.5 text-lg transition ${
-                    isActive
-                      ? "bg-green-100 font-extrabold text-green-700"
-                      : "font-bold text-gray-800 hover:bg-green-50 hover:text-green-700"
-                  }`}
+                  className={`rounded-xl px-5 py-3.5 text-lg transition ${isActive
+                    ? "bg-green-100 font-extrabold text-green-700"
+                    : "font-bold text-gray-800 hover:bg-green-50 hover:text-green-700"
+                    }`}
                 >
                   {item.name}
                 </Link>
