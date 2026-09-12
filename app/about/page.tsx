@@ -30,12 +30,12 @@ export const metadata: Metadata = {
         "Peeled Garlic Delivery India",
     ],
     alternates: {
-        canonical: "https://thegarlicfresh.com/about",
+        canonical: "https://thegarlicfresh.in/about",
     },
     openGraph: {
         title: "About Us | TheGarlicFresh - Led by Satyam",
         description: "Learn about TheGarlicFresh, led by Satyam with 5+ years of experience in fresh garlic supply across India.",
-        url: "https://thegarlicfresh.com/about",
+        url: "https://thegarlicfresh.in/about",
         siteName: "TheGarlicFresh",
         images: [
             {
@@ -546,7 +546,7 @@ export default function AboutPage() {
                             "@context": "https://schema.org",
                             "@type": "AboutPage",
                             name: "About Us | TheGarlicFresh",
-                            url: "https://thegarlicfresh.com/about",
+                            url: "https://thegarlicfresh.in/about",
                             description: "Learn about TheGarlicFresh, led by Satyam with 5+ years experience supplying fresh peeled garlic across India.",
                             mainEntity: {
                                 "@type": "Person",
@@ -555,9 +555,9 @@ export default function AboutPage() {
                                 worksFor: {
                                     "@type": "Organization",
                                     name: "TheGarlicFresh",
-                                    url: "https://thegarlicfresh.com",
+                                    url: "https://thegarlicfresh.in",
                                 },
-                                image: "https://thegarlicfresh.com/images/satyam.png",
+                                image: "https://thegarlicfresh.in/images/satyam.png",
                                 description: "Over 5 years of experience in fresh agricultural sourcing and food processing.",
                             },
                         },

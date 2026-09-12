@@ -389,10 +389,10 @@ export default function Home() {
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "TheGarlicFresh",
-              url: "https://thegarlicfresh.com",
+              url: "https://thegarlicfresh.in",
               potentialAction: {
                 "@type": "SearchAction",
-                target: "https://thegarlicfresh.com/products?q={search_term_string}",
+                target: "https://thegarlicfresh.in/products?q={search_term_string}",
                 "query-input": "required name=search_term_string",
               },
             },

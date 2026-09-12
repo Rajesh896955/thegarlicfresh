@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "Terms & Conditions | TheGarlicFresh",
   description: "Read the official Terms and Conditions of TheGarlicFresh regarding peeled garlic orders, payment terms, and delivery across India.",
   alternates: {
-    canonical: "https://thegarlicfresh.com/terms-condition",
+    canonical: "https://thegarlicfresh.in/terms-condition",
   },
 };
 
@@ -592,7 +592,7 @@ export default function TermsConditionPage() {
                 <div className="mt-4 space-y-2 text-sm text-gray-600">
                   <p>
                     <strong>Email:</strong>{" "}
-                    support@thegarlicfresh.com
+                    support@thegarlicfresh.in
                   </p>
 
                   <p>

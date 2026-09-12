@@ -177,7 +177,7 @@ export default function Footer() {
                                 />
 
                                 <a
-                                    href="mailto:support@thegarlicfresh.com"
+                                    href="mailto:support@thegarlicfresh.in"
                                     className="transition hover:text-green-400"
                                 >
                                     thegarlicfresh@gmail.com

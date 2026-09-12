@@ -72,7 +72,7 @@ export default function PrivacyPolicyPage() {
               <ShieldCheck className="h-5 w-5 text-green-600" /> 5. Data Protection Rights
             </h2>
             <p className="mt-4 text-sm sm:text-base text-gray-600">
-              You have the right to request access to the personal data we hold about you, or ask for updates and deletion. For any privacy queries, please reach out to our team at support@thegarlicfresh.com.
+              You have the right to request access to the personal data we hold about you, or ask for updates and deletion. For any privacy queries, please reach out to our team at support@thegarlicfresh.in.
             </p>
           </section>
 

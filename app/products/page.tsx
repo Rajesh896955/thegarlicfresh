@@ -178,13 +178,13 @@ export default function ProductsPage() {
             "@context": "https://schema.org",
             "@type": "ItemList",
             name: "Peeled Garlic Products - TheGarlicFresh",
-            url: "https://thegarlicfresh.com/products",
+            url: "https://thegarlicfresh.in/products",
             itemListElement: products.map((product, index) => ({
               "@type": "ListItem",
               position: index + 1,
               name: product.name,
-              url: `https://thegarlicfresh.com/products/${product.slug}`,
-              image: `https://thegarlicfresh.com${product.image}`,
+              url: `https://thegarlicfresh.in/products/${product.slug}`,
+              image: `https://thegarlicfresh.in${product.image}`,
             })),
           }),
         }}

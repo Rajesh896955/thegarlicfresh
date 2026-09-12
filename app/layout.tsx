@@ -4,7 +4,7 @@ import Header from "./header/Header";
 import Footer from "./fotter/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://thegarlicfresh.com"),
+  metadataBase: new URL("https://thegarlicfresh.in"),
   title: {
     default: "Buy Peeled Garlic Online in India | Fresh Ready-to-Cook Garlic Cloves - TheGarlicFresh",
     template: "%s | TheGarlicFresh - Fresh Peeled Garlic India",
@@ -127,13 +127,13 @@ export const metadata: Metadata = {
   publisher: "TheGarlicFresh",
   category: "Food & Grocery Delivery",
   alternates: {
-    canonical: "https://thegarlicfresh.com",
+    canonical: "https://thegarlicfresh.in",
   },
   openGraph: {
     title: "Buy Peeled Garlic Online in India | All India Fast Delivery - TheGarlicFresh",
     description:
       "Save cooking time with 100% natural, farm-fresh, hygienically peeled garlic. Delivered across all cities in India.",
-    url: "https://thegarlicfresh.com",
+    url: "https://thegarlicfresh.in",
     siteName: "TheGarlicFresh",
     images: [
       {
@@ -176,10 +176,10 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "TheGarlicFresh",
-    url: "https://thegarlicfresh.com",
+    url: "https://thegarlicfresh.in",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://thegarlicfresh.com/products?q={search_term_string}",
+      target: "https://thegarlicfresh.in/products?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };
@@ -188,8 +188,8 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "TheGarlicFresh",
-    url: "https://thegarlicfresh.com",
-    logo: "https://thegarlicfresh.com/images/logo.png",
+    url: "https://thegarlicfresh.in",
+    logo: "https://thegarlicfresh.in/images/logo.png",
     founder: {
       "@type": "Person",
       name: "Satyam Kumar",

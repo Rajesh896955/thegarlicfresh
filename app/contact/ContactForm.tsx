@@ -58,7 +58,7 @@ export default function ContactForm() {
                 <label className="block text-sm font-semibold text-gray-700">Email Address</label>
                 <input
                     type="email"
-                    placeholder="contact@thegarlicfresh.com"
+                    placeholder="contact@thegarlicfresh.in"
                     className="mt-2 w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-sm focus:border-green-600 focus:outline-none focus:ring-2 focus:ring-green-600/20"
                 />
             </div>

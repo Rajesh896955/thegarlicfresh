@@ -25,12 +25,12 @@ export const metadata: Metadata = {
         "Satyam Kumar Garlic Contact",
     ],
     alternates: {
-        canonical: "https://thegarlicfresh.com/contact",
+        canonical: "https://thegarlicfresh.in/contact",
     },
     openGraph: {
         title: "Contact Us | TheGarlicFresh - All India Supply",
         description: "Get in touch with TheGarlicFresh for retail and wholesale peeled garlic inquiries with All India doorstep delivery.",
-        url: "https://thegarlicfresh.com/contact",
+        url: "https://thegarlicfresh.in/contact",
         siteName: "TheGarlicFresh",
         images: [{ url: "/images/homepage.png", width: 1200, height: 630, alt: "TheGarlicFresh Contact" }],
         type: "website",
@@ -68,7 +68,7 @@ export default function ContactPage() {
                 <div className="grid gap-5 md:grid-cols-3">
                     {/* Email */}
                     <a
-                        href="mailto:support@thegarlicfresh.com"
+                        href="mailto:support@thegarlicfresh.in"
                         className="group rounded-2xl border border-gray-100 bg-white p-6 shadow-lg transition hover:-translate-y-1 hover:shadow-xl"
                     >
                         <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-green-50 transition group-hover:bg-green-600">
@@ -352,12 +352,12 @@ export default function ContactPage() {
                             "@context": "https://schema.org",
                             "@type": "ContactPage",
                             name: "Contact Us | TheGarlicFresh",
-                            url: "https://thegarlicfresh.com/contact",
+                            url: "https://thegarlicfresh.in/contact",
                             description: "Contact TheGarlicFresh for retail, wholesale, and bulk peeled garlic supply across India.",
                             mainEntity: {
                                 "@type": "Organization",
                                 name: "TheGarlicFresh",
-                                url: "https://thegarlicfresh.com",
+                                url: "https://thegarlicfresh.in",
                                 contactPoint: {
                                     "@type": "ContactPoint",
                                     contactType: "customer service",

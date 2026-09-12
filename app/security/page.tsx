@@ -465,7 +465,7 @@ export default function PrivacyPolicyPage() {
                 <div className="mt-4 space-y-2 text-sm text-gray-600">
                   <p>
                     <strong>Email:</strong>{" "}
-                    privacy@thegarlicfresh.com
+                    privacy@thegarlicfresh.in
                   </p>
 
                   <p>
