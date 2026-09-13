@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         description: "Get in touch with TheGarlicFresh for retail and wholesale peeled garlic inquiries with All India doorstep delivery.",
         url: "https://thegarlicfresh.in/contact",
         siteName: "TheGarlicFresh",
-        images: [{ url: "/images/homepage.png", width: 1200, height: 630, alt: "TheGarlicFresh Contact" }],
+        images: [{ url: "/images/homepart.png", width: 1200, height: 630, alt: "TheGarlicFresh Contact" }],
         type: "website",
     },
 };

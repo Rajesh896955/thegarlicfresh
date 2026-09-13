@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "TheGarlicFresh",
     images: [
       {
-        url: "/images/homepage.png",
+        url: "/images/homepart.png",
         width: 1200,
         height: 630,
         alt: "TheGarlicFresh Products",
