@@ -162,7 +162,7 @@ export default function ContactPage() {
                                     <h3 className="font-bold">Our Location</h3>
 
                                     <p className="mt-1 text-sm leading-6 text-gray-500">
-                                        Pcmc Pune
+                                        PCMC PUNE
                                         <br />
                                         MIDC Bhosri 411026
                                     </p>

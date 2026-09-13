@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Mail, Phone, MapPin } from "lucide-react";
+import { FaFacebookF, FaInstagram } from "react-icons/fa6";
 
 export default function Footer() {
     return (
@@ -40,17 +41,13 @@ export default function Footer() {
                         {/* Social Icons */}
                         <div className="mt-6 flex items-center gap-3">
                             <a
-                                href="#"
+                                href="https://www.facebook.com/share/19HSzW9ZYK/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 aria-label="Facebook"
-                                className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-xl transition-transform duration-300 hover:scale-110"
+                                className="flex h-10 w-10 items-center justify-center rounded-xl bg-gray-900 border border-gray-800 text-gray-300 transition-all duration-300 hover:bg-[#1877F2] hover:border-[#1877F2] hover:text-white hover:scale-110 shadow-sm"
                             >
-                                <Image
-                                    src="/blog/facebook.png"
-                                    alt="Facebook"
-                                    width={36}
-                                    height={36}
-                                    className="h-9 w-9 object-contain"
-                                />
+                                <FaFacebookF size={18} />
                             </a>
 
                             <a
@@ -58,15 +55,9 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Instagram"
-                                className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-xl transition-transform duration-300 hover:scale-110"
+                                className="flex h-10 w-10 items-center justify-center rounded-xl bg-gray-900 border border-gray-800 text-gray-300 transition-all duration-300 hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] hover:border-transparent hover:text-white hover:scale-110 shadow-sm"
                             >
-                                <Image
-                                    src="/blog/instagram.png"
-                                    alt="Instagram"
-                                    width={36}
-                                    height={36}
-                                    className="h-9 w-9 object-contain"
-                                />
+                                <FaInstagram size={20} />
                             </a>
                         </div>
                     </div>

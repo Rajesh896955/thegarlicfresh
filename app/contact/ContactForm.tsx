@@ -39,7 +39,7 @@ export default function ContactForm() {
                     <input
                         type="text"
                         required
-                        placeholder="Satyam Kumar"
+                        placeholder="ABC Kumar"
                         className="mt-2 w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-sm focus:border-green-600 focus:outline-none focus:ring-2 focus:ring-green-600/20"
                     />
                 </div>

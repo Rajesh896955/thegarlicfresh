@@ -89,45 +89,28 @@ const faqs = [
 const customerReviews = [
   {
     name: "Pooja Sharma",
-    role: "Home Chef, Delhi",
+    role: "Home Chef, Pune",
     rating: 5,
     comment:
       "Game changer for everyday cooking! No more garlic smelling fingers or wasted morning prep time. The cloves are big, white, and super flavorful.",
   },
   {
     name: "Chef Rajesh Verma",
-    role: "Cloud Kitchen Owner, Bengaluru",
+    role: "Cloud Kitchen Owner, Pune",
     rating: 5,
     comment:
       "We use 10kg weekly for our curry gravies and marinades. TheGarlicFresh has saved us massive prep labor while maintaining top-notch aroma.",
   },
   {
     name: "Ananya Iyer",
-    role: "Working Professional, Mumbai",
+    role: "Working Professional, Pune",
     rating: 5,
     comment:
       "Vacuum packaging is incredible! Stays fresh in my fridge for weeks. Highly recommended for busy professionals who love fresh home-cooked food.",
   },
 ];
 
-const topCities = [
-  "Delhi NCR",
-  "Mumbai",
-  "Bengaluru",
-  "Hyderabad",
-  "Kolkata",
-  "Chennai",
-  "Pune",
-  "Ahmedabad",
-  "Jaipur",
-  "Lucknow",
-  "Chandigarh",
-  "Surat",
-  "Indore",
-  "Bhopal",
-  "Patna",
-  "Kochi",
-];
+
 
 export default function Home() {
   const websiteSchema = {
@@ -732,72 +715,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* =====================================================
-          9. NATIONWIDE ALL-INDIA DELIVERY COVERAGE
-      ====================================================== */}
-      <section className="bg-gradient-to-b from-gray-50 to-white py-14 border-t border-gray-100">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-green-700">
-            <MapPin className="h-4 w-4 text-green-600" />
-            <span>Fast Nationwide Delivery Network</span>
-          </div>
-          <h2 className="mt-2 text-2xl font-extrabold text-gray-900 sm:text-3xl">
-            Fresh Peeled Garlic Delivered Across 50+ Cities in India
-          </h2>
-          <p className="mx-auto mt-3 max-w-2xl text-xs text-gray-600 sm:text-sm">
-            We deliver vacuum-packed fresh peeled garlic to doorstep locations across all major Indian metropolitan areas, towns, and regions.
-          </p>
 
-          <div className="mt-6 flex flex-wrap justify-center gap-2 sm:gap-3">
-            {topCities.map((city) => (
-              <span
-                key={city}
-                className="inline-flex items-center rounded-full border border-gray-200 bg-white px-3.5 py-1.5 text-xs font-medium text-gray-700 shadow-sm transition hover:border-green-300 hover:text-green-700"
-              >
-                📍 {city}
-              </span>
-            ))}
-            <span className="inline-flex items-center rounded-full border border-green-200 bg-green-50 px-3.5 py-1.5 text-xs font-bold text-green-800 shadow-sm">
-              + All Indian Pin Codes
-            </span>
-          </div>
-        </div>
-      </section>
-
-      {/* =====================================================
-          10. CALL TO ACTION BANNER
-      ====================================================== */}
-      <section className="bg-gradient-to-r from-green-600 to-emerald-700 py-16 text-white">
-        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-          <div className="text-5xl" aria-hidden="true">🧄</div>
-          <h2 className="mt-4 text-3xl font-extrabold sm:text-4xl">
-            Upgrade Your Kitchen Preparation Today
-          </h2>
-          <p className="mt-4 text-base text-green-100 max-w-2xl mx-auto">
-            Order fresh, hygienically peeled garlic for home cooking or commercial kitchen needs. Express doorstep delivery with guaranteed freshness.
-          </p>
-          <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-4 text-base font-bold text-green-800 shadow-xl transition hover:bg-green-50 active:scale-[0.98]"
-            >
-              Get in Touch with Us
-              <ArrowRight className="h-5 w-5" />
-            </Link>
-            <Link
-              href="/products"
-              className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/60 bg-transparent px-8 py-4 text-base font-bold text-white shadow-sm transition hover:bg-white/10 active:scale-[0.98]"
-            >
-              <ShoppingBag className="h-5 w-5" />
-              View All Products
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* =====================================================
-          11. JSON-LD STRUCTURED DATA SCHEMAS
-      ====================================================== */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

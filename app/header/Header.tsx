@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { Menu, X, ShoppingCart } from "lucide-react";
+import { Menu, X, ShoppingCart, Truck, ShieldCheck } from "lucide-react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,6 +31,23 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/95 backdrop-blur shadow-sm">
+      {/* Top Bar Announcement */}
+      <div className="bg-[#044c26] px-4 py-2 text-xs sm:text-sm font-semibold text-white">
+        <div className="mx-auto flex max-w-7xl items-center justify-center sm:justify-end gap-3 sm:gap-5">
+          <div className="flex items-center gap-1.5 sm:gap-2">
+            <Truck className="h-4 w-4 sm:h-[18px] sm:w-[18px] shrink-0 text-white" />
+            <span>Free Shipping on Orders Above ₹999</span>
+          </div>
+
+          <span className="text-white/40 select-none">|</span>
+
+          <div className="flex items-center gap-1.5 sm:gap-2">
+            <ShieldCheck className="h-4 w-4 sm:h-[18px] sm:w-[18px] shrink-0 text-white" />
+            <span>100% Quality Guarantee</span>
+          </div>
+        </div>
+      </div>
+
       <div className="mx-auto flex h-24 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
 
         {/* Logo Image */}
