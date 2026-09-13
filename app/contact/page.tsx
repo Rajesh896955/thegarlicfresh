@@ -88,7 +88,7 @@ export default function ContactPage() {
 
                     {/* Phone */}
                     <a
-                        href="tel:+910000000000"
+                        href="tel:+91 9354309538"
                         className="group rounded-2xl border border-gray-100 bg-white p-6 shadow-lg transition hover:-translate-y-1 hover:shadow-xl"
                     >
                         <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-green-50 transition group-hover:bg-green-600">

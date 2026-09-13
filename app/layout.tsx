@@ -122,6 +122,17 @@ export const metadata: Metadata = {
     "TheGarlicFresh official store",
     "TheGarlicFresh fresh peeled garlic",
   ],
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/images/logo.png", type: "image/png", sizes: "192x192" },
+      { url: "/images/logo.png", type: "image/png", sizes: "512x512" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: [
+      { url: "/images/logo.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
   authors: [{ name: "Satyam Kumar - TheGarlicFresh Founder" }],
   creator: "TheGarlicFresh",
   publisher: "TheGarlicFresh",
@@ -137,7 +148,7 @@ export const metadata: Metadata = {
     siteName: "TheGarlicFresh",
     images: [
       {
-        url: "/images/logo.png",
+        url: "https://thegarlicfresh.in/images/logo.png",
         width: 1200,
         height: 1200,
         alt: "TheGarlicFresh - Premium Peeled Garlic Logo",
@@ -150,7 +161,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Buy Fresh Peeled Garlic Online India | TheGarlicFresh",
     description: "Farm fresh, hygienically peeled ready-to-cook garlic delivered fast across India.",
-    images: ["/images/logo.png"],
+    images: ["https://thegarlicfresh.in/images/logo.png"],
   },
   robots: {
     index: true,
@@ -176,6 +187,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "TheGarlicFresh",
+    alternateName: ["The Garlic Fresh", "TheGarlicFresh.in"],
     url: "https://thegarlicfresh.in",
     potentialAction: {
       "@type": "SearchAction",
@@ -188,8 +200,15 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "TheGarlicFresh",
+    alternateName: ["The Garlic Fresh", "TheGarlicFresh.in"],
     url: "https://thegarlicfresh.in",
-    logo: "https://thegarlicfresh.in/images/logo.png",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://thegarlicfresh.in/images/logo.png",
+      width: "512",
+      height: "512",
+    },
+    image: "https://thegarlicfresh.in/images/logo.png",
     founder: {
       "@type": "Person",
       name: "Satyam Kumar",
@@ -203,7 +222,8 @@ export default function RootLayout({
     },
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+91-9876543210",
+      telephone: "+91-9354309538",
+      email: "thegarlicfresh@gmail.com",
       contactType: "customer service",
       areaServed: "IN",
       availableLanguage: ["English", "Hindi"],
@@ -213,6 +233,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/images/logo.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/images/logo.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebsite) }}
