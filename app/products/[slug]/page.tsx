@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Star, ShieldCheck, Truck, Sparkles, ArrowLeft, CheckCircle2, ShoppingCart, Heart } from "lucide-react";
+import { Star, ShieldCheck, Truck, Sparkles, ArrowLeft, CheckCircle2 } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa6";
 import { products } from "@/app/data/products";
 import ShareButtons from "./ShareButtons";
 
@@ -86,9 +87,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
                 priority
                 className="object-contain p-2 object-center"
               />
-              <div className="absolute top-4 left-4 rounded-full bg-orange-500 px-3.5 py-1 text-xs font-extrabold text-white shadow-md">
-                {product.discount}
-              </div>
+
             </div>
 
             <div className="mt-6 grid grid-cols-3 gap-3 text-center">
@@ -133,16 +132,6 @@ export default async function ProductDetailPage({ params }: PageProps) {
                 </div>
               </div>
 
-              {/* Coming Soon status */}
-              <div className="mt-6 flex items-center gap-3">
-                <span className="inline-flex items-center rounded-xl bg-emerald-50 border border-emerald-200 px-4 py-2 text-2xl font-bold text-emerald-700">
-                  Coming Soon
-                </span>
-                <span className="text-sm font-medium text-gray-500">
-                  (Online orders opening soon)
-                </span>
-              </div>
-
               <p className="mt-4 text-sm leading-relaxed text-gray-600 sm:text-base">
                 Freshly peeled, cleaned, and sorted ready-to-cook garlic cloves. Packed under strict hygienic conditions to preserve natural aroma, pungency, and taste. Delivered across all cities and towns in India.
               </p>
@@ -165,16 +154,19 @@ export default async function ProductDetailPage({ params }: PageProps) {
 
             {/* Actions */}
             <div className="mt-8 border-t border-gray-100 pt-6 flex flex-col sm:flex-row gap-4">
-              <button
-                type="button"
-                disabled
-                className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl bg-gray-100 border border-gray-200 px-6 py-4 font-bold text-gray-500 cursor-not-allowed"
+              <a
+                href={`https://wa.me/919354309538?text=${encodeURIComponent(
+                  `Hello TheGarlicFresh, I want to order ${product.name} (${product.packSize || "Peeled Garlic"}). Please share details!`
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl bg-green-600 px-6 py-4 font-bold text-white shadow-lg shadow-green-600/20 transition hover:bg-green-700"
               >
-                <ShoppingCart className="h-5 w-5" /> Coming Soon
-              </button>
+                <FaWhatsapp className="h-5 w-5" /> Order on WhatsApp
+              </a>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-xl bg-green-600 px-6 py-4 font-bold text-white shadow-lg shadow-green-600/20 transition hover:bg-green-700"
+                className="inline-flex items-center justify-center rounded-xl border border-gray-300 bg-white px-6 py-4 font-bold text-gray-700 transition hover:border-green-600 hover:text-green-600"
               >
                 Bulk Inquiry
               </Link>

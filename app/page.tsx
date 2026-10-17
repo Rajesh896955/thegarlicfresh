@@ -380,12 +380,14 @@ export default function Home() {
                       </h3>
                     </Link>
 
-                    {/* Coming Soon Badge */}
-                    <div className="mt-3 flex items-center gap-2">
-                      <span className="inline-flex items-center rounded-lg border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-bold text-emerald-700">
-                        Coming Soon
-                      </span>
-                    </div>
+                    {/* Pack Size */}
+                    {product.packSize && (
+                      <div className="mt-2 flex items-center gap-2">
+                        <span className="text-xs font-semibold text-green-700 bg-green-50 px-2 py-0.5 rounded border border-green-200">
+                          {product.packSize}
+                        </span>
+                      </div>
+                    )}
 
                     {/* Offer Tagline */}
                     <p className="mt-2 text-sm font-semibold text-gray-700">

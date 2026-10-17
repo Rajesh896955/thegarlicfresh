@@ -99,21 +99,14 @@ export default function ProductsPage() {
                     {product.name}
                   </h3>
 
-                  {/* Pack Size & Coming Soon */}
-                  <div className="mt-2 flex items-center gap-2">
-                    {product.packSize && (
+                  {/* Pack Size */}
+                  {product.packSize && (
+                    <div className="mt-2 flex items-center gap-2">
                       <span className="text-xs font-semibold text-green-700 bg-green-50 px-2 py-0.5 rounded border border-green-200">
                         {product.packSize}
                       </span>
-                    )}
-                  </div>
-
-                  {/* Coming Soon */}
-                  <div className="mt-3 flex items-center gap-2">
-                    <span className="inline-flex items-center rounded-lg bg-emerald-50 px-3 py-1 text-sm font-bold text-emerald-700 border border-emerald-200">
-                      Coming Soon
-                    </span>
-                  </div>
+                    </div>
+                  )}
 
                   {/* Offer */}
                   <p className="mt-2 text-sm font-semibold text-gray-700">
