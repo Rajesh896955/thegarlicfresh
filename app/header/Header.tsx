@@ -36,7 +36,7 @@ export default function Header() {
         <div className="mx-auto flex max-w-7xl items-center justify-center sm:justify-end gap-3 sm:gap-5">
           <div className="flex items-center gap-1.5 sm:gap-2">
             <Truck className="h-4 w-4 sm:h-[18px] sm:w-[18px] shrink-0 text-white" />
-            <span>Free Shipping on Orders Above ₹999</span>
+            <span>Free Shipping on Orders Above ₹9999</span>
           </div>
 
           <span className="text-white/40 select-none">|</span>

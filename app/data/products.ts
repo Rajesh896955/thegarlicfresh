@@ -101,6 +101,7 @@ export const products: Product[] = [
   //   price: 329,
   //   discount: "18% OFF",
   //   offer: "Daily Fresh",
+
   //   rating: 4.8,
   //   reviews: 20,
   //   packSize: "350 gm Pack",
