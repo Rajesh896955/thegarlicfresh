@@ -142,7 +142,7 @@ export default function ProductsPage() {
                   href={`/products/${product.slug}`}
                   className="w-full rounded-xl bg-green-600 py-2.5 text-center text-sm font-bold text-white shadow-md transition hover:bg-green-700 flex items-center justify-center"
                 >
-                  View product
+                  View Product
                 </Link>
 
                 <a

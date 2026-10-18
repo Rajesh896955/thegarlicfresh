@@ -421,7 +421,7 @@ export default function Home() {
                     href={`/products/${product.slug}`}
                     className="mt-5 flex h-11 w-full items-center justify-center rounded-xl bg-green-600 text-sm font-bold text-white shadow-sm transition hover:bg-green-700"
                   >
-                    View Product Details
+                    View Product
                   </Link>
                 </div>
               </article>

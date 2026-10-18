@@ -140,7 +140,7 @@ export default function AboutPage() {
                     <div className="relative">
                         <div className="relative aspect-[5/4] w-full overflow-hidden rounded-2xl">
                             <Image
-                                src="/images/image2.png"
+                                src="/images/about.avif"
                                 alt="Simple Idea. Fresh Results."
                                 fill
                                 priority
